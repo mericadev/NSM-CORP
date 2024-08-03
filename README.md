@@ -1,7 +1,3 @@
-In that case, you'll want to include a section about the proprietary nature of the project and specify that the code is not available for public use or modification. Here's an updated version of the README file with those considerations in mind:
-
----
-
 # NSM Corp Website
 
 Welcome to the NSM Corp website repository. This project showcases the professional services offered by NSM Corp, including career coaching, mentorship, CV revamp, and public speaking engagements.
