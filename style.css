@@ -113,7 +113,7 @@ p, li, a, h3, h4, button, span, label {
   justify-content: center;
   gap: 3rem;
   padding: var(--padding-2);
-  background-image: url(/images/shadow\ background.webp);
+  background: url('../images/shadow-background.webp');
   background-size: cover; 
   background-position: center center;
   height: 50vh;
@@ -765,7 +765,7 @@ p, li, a, h3, h4, button, span, label {
     flex-direction: column;
     justify-content: center;
     gap: var(--gap-2);
-    background-image: url(/images/shadow\ background.webp);
+    background-image: url('../images/shadow-background.webp');
     background-size: cover; 
     background-position: center center;
     height: 50vh; 
@@ -1123,7 +1123,7 @@ p, li, a, h3, h4, button, span, label {
       content: "";
       /* make it huge so it covers everything on the left as it overflows */
       width: 100%;
-      background: url(/images/cotton\ candy\ skies.webp);
+      background: url('../images/candy-skies.webp');
       background-position: center;
       background-repeat: no-repeat;
       opacity: 1;
@@ -1196,7 +1196,7 @@ p, li, a, h3, h4, button, span, label {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #myEducation {
-    background-image: url(/images/lg\ shadow\ back.webp);
+    background: url('../images/flower-shadow.webp');
     background-size: cover; 
     background-position: center center;
     padding: 2rem;
@@ -1584,7 +1584,7 @@ p, li, a, h3, h4, button, span, label {
 @media only screen and (min-width: 0rem) {
   #sounds-like-you {
     padding: var(--padding-2);
-    background-image: url(/images/lg\ shadow\ back.webp);
+    background: url('../images/flower-shadow.webp');
     background-size: cover; 
     background-position: center center;
   }
@@ -1796,7 +1796,7 @@ p, li, a, h3, h4, button, span, label {
       padding: var(--padding-2);
       background: #f7f7f7;
       margin-top: var(--margin-4);
-      background-image: url(/images/shadow\ background.webp);
+      background: url('../images/shadow-background.webp');
     background-size: cover; 
     background-position: center center;
   }
