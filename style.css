@@ -1123,7 +1123,7 @@ p, li, a, h3, h4, button, span, label {
       content: "";
       /* make it huge so it covers everything on the left as it overflows */
       width: 100%;
-      background: url('../images/candy-skies.webp');
+      background: url('..images/candy-skies.webp');
       background-position: center;
       background-repeat: no-repeat;
       opacity: 1;
