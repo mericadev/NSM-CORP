@@ -765,7 +765,7 @@ p, li, a, h3, h4, button, span, label {
     flex-direction: column;
     justify-content: center;
     gap: var(--gap-2);
-    background: url(images/candy-skies.webp);
+    background: url(images/shadow-background.webp);
     background-size: cover; 
     background-position: center center;
     height: 50vh; 
