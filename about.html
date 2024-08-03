@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NSM Corp - Meet Your Top Career and Life Coach in South Africa</title>
+    <meta name="description" content="Meet your dedicated career and life coach at NSM Corp. Our about page introduces you to our coach’s qualifications, achievements, and approach to career coaching, offering insight into how we can assist you in reaching your professional and personal goals.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us - NSM Corp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yourwebsite.com/about" />
+    <meta property="og:image" content="https://www.yourwebsite.com/images/about-us-og-image.jpg" />
+    <meta property="og:description" content="Learn more about NSM Corp, our mission, and how our expert coaching can transform your career and life." />
+    <!--Other Meta Tags-->
+    <meta name="robots" content="index, follow">
+    <!--LINKS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/core-styles.css">
+      <!--FONTS-->
+      <link rel="preload" href="/fonts/open-sans-v40-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/fonts/open-sans-v40-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/fonts/pt-serif-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/fonts/pt-serif-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="canonical" href="https://nsmcorp.org/">
+</head>
+<body>
+    <div class="container">
+         <!--HEADER-->
+         <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="index.html" class="cs-logo" aria-label="back to home">
+                    <img src="images/nsm%20logo%20450.png" alt="logo"  aria-hidden="true" decoding="async">
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="index.html" class="cs-li-link cs-active">
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="about.html" class="cs-li-link">
+                                    ABOUT
+                                </a>
+                            </li>
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link">
+                                    SERVICES
+                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <a href="coaching.html" class="cs-li-link cs-drop-link">Coaching</a>
+                                    </li>   
+                                    <li class="cs-drop-li">
+                                        <a href="resume.html" class="cs-li-link cs-drop-link">CV Revamp</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="mentorship.html" class="cs-li-link cs-drop-link">Mentorship</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="speaking.html" class="cs-li-link cs-drop-link">Public Speaking</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li">
+                                <a href="index.html#packages" class="nav-btn nav-btn-mobile">
+                                    LET'S WORK TOGETHER
+                                    <!--SVG ARROW-->
+                                    <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <a href="contact.html" class="nav-btn nav-btn-desktop">
+                        LET'S WORK TOGETHER
+            <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+            </svg>
+                    </a>
+                </nav>
+            </div>
+        </header>                             
+         <!--HEADER END-->
+
+        <!--MAIN-->
+        <main>
+<!--COACH INTRO-->
+<section id="sbs-75" class="coach-about">
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="images/coach%20bw%20mobile.webp">
+                <source media="(min-width: 601px)" srcset="images/coach%20bw%20desktop.webp">
+                <img loading="lazy" decoding="async" src="images/coach%20bw%20mobile.webp" alt="body builder" width="500" height="552" aria-hidden="true">
+            </picture>
+        </div>  
+        <div class="cs-content">
+            <img class="hello" decoding="async" loading="lazy" src="images/hello.png" alt="hello friend">      
+            <h2 class="cs-title">I'm Nqobile, Your Favourite Coach
+            </h2>
+            <p>
+                <strong>I HAVE CHANNELED MY PASSION FOR PEOPLE INTO COACHING. I PROVIDE CAREER AND LIFE COACH WITH A SPECIALISATION IN CAREER TRANSITIONING AND PERSONAL GROWTH. MY MISSION IS TO EMPOWER YOU TO DISCOVER YOUR GREATNESS AND TRANSFORM YOUR CAREER AND LIFE.</strong>
+            </p>
+            <p class="cs-text">
+                With over 10 years of experience in Human Capital I have helped individuals in different stages of their careers. Whether you are a recent graduate, aspiring entrepreur or going through a career or life transition, I can help you gain clarity, achieve career goal, overcome obstacles, build your self-confidence and introduce tools that you can use independently. 
+            </p>
+        </div>
+    </div>
+</section>
+             
+<!--Education-->
+<section id="myEducation">
+    <div class="my-education-content">
+<h2>IT WASN'T ALWAYS LIKE THIS</h2>
+
+<p><strong>IN THE JOURNEY OF BECOMING A CAREER COACH I HAVE EXPERIENCED CHALLENGES AND STRUGGLES AS WE ALL DO. LOOKING AT WHERE I AM NOW, I CAN HAPPILY ADMIT IT WAS ALL WORTH IT .</strong>
+</p>
+<p>I started my career as an HR intern for a HR consulting company, where I learnt the importance of fostering authentic relationships with clients and further catering to the needs of the client in order to make a lasting impression. It was also where I further appreciate human behaviour and how the essence of human behaviour is what fascinates me.</p>  
+<p>Over the years, I realized my true passion lay in not just developing people in the workplace but also developing people holistically through life coaching, which led me to pursue my Masters qualification in Leadership coaching which has equipped me with the tools and models that enable me to tailor the coaching experience to each client.</p>
+<p>My experiences working for large corporates in the financial and the management consulting industry, climbing the proverbial corporate ladder through making mistakes and learning from those experiences. Have provided me with a deep understanding of the obstacles professionals face and how to overcome them.</p>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Timeline                    -->
+<!-- ============================================ -->
+<section id="timeline-1517">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Timeline</span>
+                <h2 class="cs-title">Key Milestones</h2>
+                <p class="cs-text">
+                    Throughout my journey, I have experienced significant milestones that have shaped my expertise and passion for coaching. Each step has contributed to my growth and has equipped me with the insights and skills necessary to guide you on your path to success. 
+                </p>
+            </div>
+           <!--<div class="cs-image-group">
+               CERT 1
+                <picture class="cs-picture">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert1.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                CERT 2
+                <picture class="cs-picture">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert2.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                CERT 3
+                <picture class="cs-picture">
+                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert2.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>-->
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-date">2023</span>
+                <h3 class="cs-h3">Promoted to Senior Human Capital Business Partner</h3>
+                <p class="cs-item-text">
+                    Senior Management
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date">2021</span>
+                <h3 class="cs-h3">Transitioned To Human Capital Business Partner</h3>
+                <p class="cs-item-text">
+                    previously worked at a sales environment to supporting an enabling Group function working with CA’s, Actuaries and Lawyers.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date">2021</span>
+                <h3 class="cs-h3">Won Human Capital Innovative Challenge</h3>
+                <p class="cs-item-text">
+                    Introduced Case Studies as part of the Recruitment process.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date">2020</span>
+                <h3 class="cs-h3">Improved Business Unit Employee Engagement</h3>
+                <p class="cs-item-text">
+                     employee engagement by introducing “virtual coffee chats” during the thick of lockdown when employees were in need of a pick me up.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!--Turn around moment-->
+<section id="turningPoint">
+    <section id="sbs-75">
+        <div class="cs-container">
+            <div class="cs-wrapper">
+                <picture class="cs-background">
+                    <source media="(min-width: 1024px)" srcset="images/turning%20point%20tab.webp">
+                    <img loading="lazy" decoding="async" src="images/turning%20point%20img.webp" alt="coach nqobile in the mountains" width="" height="" aria-hidden="true">
+                  </picture>
+            </div>
+            <div class="cs-content">
+                <h2 class="cs-title">WHAT DRIVES ME</h2>
+                <p class="cs-text">
+                    <strong>I believe that everyone has the potential to achieve their goals and live a fulfilling life.</strong><br>
+                    My approach to coaching is centered around fostering an authentic coaching relationship, creating a psychologically safe space for each client and tailoring the coaching for each client.
+                </p>
+                <p class="cs-text">
+                    I focus on actionable strategies, personalised plans, mindfulness exercises and self-awareness tools to enable the coaching experience further enhancing each clients tailored support that aligns with their unique needs and aspirations.
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!--Cant live without-->
+<!--REVIEWS SECTION-->
+<section class="fun-fact-section" id="reviews-62">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">FUN FACTS ABOUT ME</h2>
+        </div>
+        <ul class="cs-card-group fun-facts">
+            <li class="cs-item">
+                <p class="cs-item-text">GROWTH</p>
+                <h2>eBOOKS ARE GREAT BUT I LOVE THE FEEL OF A REAL BOOK</h2>
+                <img src="images/read.webp" class="cs-img" aria-hidden="true" loading="lazy" decoding="async" width="240" height="296">
+            </li>
+            <li class="cs-item">
+                <p class="cs-item-text">TRAVEL</p>
+                <h2>MY GOAL IS TO VISIT MOST AFRICAN COUNTRIES.</h2>
+                <img src="images/travel.webp" class="cs-img" aria-hidden="true" loading="lazy" decoding="async" alt="profile" width="68" height="68">
+            </li>
+            <li class="cs-item">
+                <p class="cs-item-text">WRITER</p>
+                <h2>I'M A BLOGGER AND AN ASPIRING AUTHOR</h2>
+                <img src="images/journaling.webp" class="cs-img" aria-hidden="true" loading="lazy" decoding="async"  alt="profile" width="68" height="68">
+            </li>
+            <li class="cs-item">
+                <p class="cs-item-text">BEACH DAYS</p>
+                <h2>I'M WATER SIGN WHO LOVES THE SEA</h2>
+                <img src="images/beach.webp" class="cs-img" aria-hidden="true" loading="lazy" decoding="async"  alt="profile" width="68" height="68">
+            </li>
+            <li class="cs-item">
+                <p class="cs-item-text">ADRENALINE JUNKY</p>
+                <h2>I LOVE HIKES & CONNECTING WITH NATURE</h2>
+                <img src="images/hiking.webp" class="cs-img" aria-hidden="true" loading="lazy" decoding="async"  alt="profile" width="68" height="68">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Favourite Quote-->
+<section id="philosophy-section" class="about-quote">
+    <div class="philosophy-content">
+    <h2>You Shouldn’t Have To Struggle
+        Alone and Feel Lost When Trying To Create The Life Of Your Dreams</h2>
+        <p>You deserve guidance and support to
+            navigate the complexities of
+            reaching those dreams</p>
+</div>
+    <div class="cta">
+        <a href="contact.html" class="cs-button-6" aria-label="read more about us">
+            READY TO START?
+            <!--SVG Arrow-->
+            <svg class="cs-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#1A1A1A"/>
+            </svg>
+        </a>
+    </div>
+ </section>
+        </main>
+        <!--MAIN END-->
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">
+ <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" fill="none" stroke="#1a0d26" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M5 12l7-7 7 7"/></svg>
+        </button>
+        <!--FOOTER-->
+        <footer id="cs-footer-1292">
+            <div class="cs-container">      
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a href="index.html" class="cs-logo" aria-label="back to home">
+                        <img src="images/footer%20logo.png" alt="logo"  aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="mailto:info@nsmcorp.org" class="cs-link">
+                        <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/construction-mail.svg" alt="icon" width="24" height="24">
+                        info@nsmcorp.corp
+                    </a>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Services</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="coaching.html">Life & Career Coaching</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="resume.html">CV Revamp</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="mentorship.html">Mentorship</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="speaking.html">Public Speaking</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">About</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="about.html">Our Story</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="https://www.linkedin.com/in/nqobile-hlophe-5006641b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+                        ">LinkedIn</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="https://www.instagram.com/nsm_hlophe?igsh=MXhnOWNubTl2c21jaQ%3D%3D&utm_source=qr">Instagram</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="https://www.tiktok.com/@nsm_hlophe?_t=8oVsIYwNksH&_r=1">TikTok</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Help</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <span class="cs-copyright">Copyright© 2024. 
+                    <a class="cs-copyright-link" href="">NSM CORP</a>
+                    All Right Reserved.
+                </span>
+                <a href="terms-conditions.html" class="cs-copyright-link">Terms of Service</a>
+                <a href="privacy-policy.html" class="cs-copyright-link">Privacy Policy</a>
+                <a href="" class="website-by">Coded With Love by <span>MeriLuu Marketing</span></a>
+            </div>
+            <!--Floating Cirlces-->
+            <div class="cs-floater" aria-hidden="true">
+            </div>
+         </footer>
+        <!--FOOTER END-->
+    </div>
+    <!--SCRIPTS-->
+    <script src="script.js" defer></script>
+</body>
+</html>
