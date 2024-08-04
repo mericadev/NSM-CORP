@@ -785,12 +785,12 @@
 <---          Footer            -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
+/* Mobile - 360px
 @media only screen and (max-width: 800px) {
   #cs-footer-1292{
     margin-top: -4rem;
   }
-}
+} */
 
 @media only screen and (min-width: 0rem) {
   #cs-footer-1292 {
