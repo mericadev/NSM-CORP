@@ -8,6 +8,9 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-width: 400px; 
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -60,7 +63,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     overflow-x: hidden;
     margin: 0 auto;
-    min-width: 400px; 
     background-color: var(--light-purp);
   }
 .cta {
@@ -113,7 +115,7 @@ p, li, a, h3, h4, button, span, label {
   justify-content: center;
   gap: 3rem;
   padding: var(--padding-2);
-  background: url(images/shadow-background.webp);
+  background: url('../images/shadow-background.webp');
   background-size: cover; 
   background-position: center center;
   height: 50vh;
@@ -389,6 +391,7 @@ p, li, a, h3, h4, button, span, label {
     #reviews-1529 .cs-graphic {
       position: absolute;
       z-index: 1;
+      opacity: .6;
     }
     #reviews-1529 .cs-graphic-one {
       /* 48px - 138px */
@@ -805,6 +808,7 @@ p, li, a, h3, h4, button, span, label {
     .cs-graphic-two{
       position: absolute;
       z-index: -1;
+      opacity: .6;
     }
     #reviews-62 .cs-graphic-f-1 {
       top: 18%;
@@ -1123,7 +1127,7 @@ p, li, a, h3, h4, button, span, label {
       content: "";
       /* make it huge so it covers everything on the left as it overflows */
       width: 100%;
-      background: url(images/candy-skies.webp);
+      background: url('/images/candy-skies.webp');
       background-position: center;
       background-repeat: no-repeat;
       opacity: 1;
@@ -1196,7 +1200,7 @@ p, li, a, h3, h4, button, span, label {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #myEducation {
-    background: url(images/flower-shadow.webp);
+    background: url('images/flower-shadow.webp');
     background-size: cover; 
     background-position: center center;
     padding: 2rem;
@@ -1584,7 +1588,7 @@ p, li, a, h3, h4, button, span, label {
 @media only screen and (min-width: 0rem) {
   #sounds-like-you {
     padding: var(--padding-2);
-    background: url(images/flower-shadow.webp);
+    background: url('/images/flower-shadow.webp');
     background-size: cover; 
     background-position: center center;
   }
@@ -1607,6 +1611,8 @@ p, li, a, h3, h4, button, span, label {
     text-align: left;
     max-width: 50rem;
     margin-bottom: var(--margin-2);
+    margin: 0;
+    padding: 0;
   }
   #sounds-like-you .cs-text .cs-li{
     margin-bottom: 1rem;
@@ -1746,6 +1752,10 @@ p, li, a, h3, h4, button, span, label {
   text-transform: uppercase;
   text-align: center;
 }
+.coaching-details {
+  margin: 0;
+  padding: 0;
+}
 .coaching-details .cs-li {
   list-style: none;
   font-weight: 700;
@@ -1796,7 +1806,7 @@ p, li, a, h3, h4, button, span, label {
       padding: var(--padding-2);
       background: #f7f7f7;
       margin-top: var(--margin-4);
-      background: url(images/shadow-background.webp);
+      background: url('/images/shadow-background.webp');
     background-size: cover; 
     background-position: center center;
   }
