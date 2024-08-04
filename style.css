@@ -1,4 +1,4 @@
-*CSS RESET*/
+/*CSS RESET*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -91,23 +91,23 @@ p, li, a, h3, h4, button, span, label {
   margin: 0 auto;
   margin-bottom: var(--margin-4);
   padding: var(--padding-2);
-  img {
-    display: block;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    margin-top: -8rem;
-  }
-  .rem-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  p {
-    text-align: left !important;
-    margin-bottom: 1rem;
-  }
+}
+#reminder-section img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  margin-top: -8rem;
+}
+#reminder-section .rem-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#reminder-section {
+  text-align: left !important;
+  margin-bottom: 1rem;
 }
 #philosophy-section {
   display: flex;
@@ -120,9 +120,9 @@ p, li, a, h3, h4, button, span, label {
   background-position: center center;
   height: 50vh;
   margin: 2rem 0 4rem 0;
-  .philosophy-content{
-    text-align: center;
-  }
+}
+#philosophy-section .philosophy-content{
+  text-align: center;
 }
 #reviews-1529 {
   margin-bottom: var(--margin-2);
@@ -474,9 +474,8 @@ p, li, a, h3, h4, button, span, label {
       justify-content: center;
       align-items: stretch;
       flex-direction: column;
-      column-gap: auto;
       /* 48px - 80px */
-      row-gap: clamp(3rem, 6vw, 5rem);
+      row-gap: clamp(3rem, 3vw, 3rem);
       position: relative;
   }
   #contact-1150 .cs-content {
@@ -773,18 +772,16 @@ p, li, a, h3, h4, button, span, label {
     background-position: center center;
     height: 50vh; 
     padding: 2rem;
-    .salary-content {
-      text-align: center;
-    }
+  }
+  #salary .salary-content {
+    text-align: center;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #salary {
-    .salary-content {
+  #salary .salary-content{
       max-width: 50rem;
       margin: 0 auto;
-    }
   }
 }
 
@@ -1025,18 +1022,19 @@ p, li, a, h3, h4, button, span, label {
             color: #ffffff;
             padding: 50px;
             margin: 2rem 0 4rem 0;
-            p {
+            }
+            #steps-section p {
               text-align: center;
               font-weight: 700;
             }
-            ul.steps {
+            #steps-section ul.steps {
               list-style: none;
               max-width: 80rem;
               margin: 0 auto;
-              li {
-                margin-bottom: 1rem;
-                font-weight: 700;
-              }
+            }
+            #steps-section li {
+              margin-bottom: 1rem;
+              font-weight: 700;
             }
           }
           .video-background {
@@ -1204,14 +1202,14 @@ p, li, a, h3, h4, button, span, label {
     background-size: cover; 
     background-position: center center;
     padding: 2rem;
-  .my-education-content {
-    margin: 0 auto;
-    max-width: 60rem;
-    text-align: center;
-  }
   }
   #myEducation .my-education-content p {
     margin-bottom: 1rem;
+  }
+  #myEducation .my-education-content {
+    margin: 0 auto;
+    max-width: 60rem;
+    text-align: center;
   }
 }
 
@@ -1624,10 +1622,10 @@ p, li, a, h3, h4, button, span, label {
     border: 1px solid var(--black-purp);
     background-color: rgba(211, 16, 211, 0.271);
     transition: .2s ease-in-out;
-    &:hover {
-      background-color: var(--secondary);
-      color: var(--white-purp);
-    }
+  }
+  #sounds-like-you .cs-text li:not(.cs-li):hover {
+    background-color: var(--secondary);
+    color: var(--white-purp);
   }
 } 
 /*-- ---------------------------->
@@ -1673,12 +1671,12 @@ p, li, a, h3, h4, button, span, label {
       display: flex;
       flex-direction: column;
       margin-left: clamp(0.5rem, 1vw, 0.75rem);
-      .cs-text {
-        margin-bottom: var(--margin-2);
-      }
-      .cta {
-        margin-top: var(--margin-2);
-      }
+  }
+  #reviews-56 .cs-content .cs-text {
+    margin-bottom: var(--margin-2);
+  }
+  #reviews-56 .cs-content .cta {
+    margin-top: var(--margin-2);
   }
 
   #reviews-56 .cs-review {
@@ -1735,8 +1733,7 @@ p, li, a, h3, h4, button, span, label {
       top: calc(clamp(0.5rem, 0.6vw, 0.75em) * -1);
       left: calc(clamp(0.5rem, 0.6vw, 0.75em) * -1);
   }
-  #reviews-56 .cs-picture {
-    img {
+  #reviews-56 .cs-picture img {
       position: absolute;
       top: 0;
       left: 0;
@@ -1744,7 +1741,6 @@ p, li, a, h3, h4, button, span, label {
       width: 100%;
       object-fit: cover;
       margin-bottom: 4rem;
-  }
 }
 #reviews-56 .ready {
   margin-top: var(--margin-2);
@@ -2005,21 +2001,21 @@ p, li, a, h3, h4, button, span, label {
 @media only screen and (min-width: 0rem) {
   .public-speaking {
     margin-top: 6rem;
-    .cs-content{
-      margin-top: -2rem;
-    }
-    .cta {
-      margin-top: -2rem;
-    }
+  }
+  .public-speaking .cs-content{
+    margin-top: -2rem;
+  }
+  .public-speaking .cta {
+    margin-top: -2rem;
   }
   #reviews-1529.other-services {
     margin-top: 8rem;
-  .cs-review {
+  }
+  #reviews-1529.other-services .cs-review {
     border: none;
   }
-  .cs-review:before {
+  #reviews-1529.other-services .cs-review:before {
     border-radius: 0% !important;
-  }
   }
 }
 
@@ -2045,7 +2041,7 @@ p, li, a, h3, h4, button, span, label {
   }
 }
 
-  /*-- -------------------------- -->
+/*---------------------------- -->
 <---          Pricing           -->
 <--- -------------------------- -*/
 
@@ -2127,7 +2123,6 @@ p, li, a, h3, h4, button, span, label {
     background: linear-gradient(90deg, hsla(271, 25%, 60%, 1) 16%, hsla(271, 29%, 73%, 1) 50%, hsla(231, 100%, 80%, 1) 93%);
     background: -moz-linear-gradient(90deg, hsla(271, 25%, 60%, 1) 16%, hsla(271, 29%, 73%, 1) 50%, hsla(231, 100%, 80%, 1) 93%);
     background: -webkit-linear-gradient(90deg, hsla(271, 25%, 60%, 1) 16%, hsla(271, 29%, 73%, 1) 50%, hsla(231, 100%, 80%, 1) 93%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9A80B3", endColorstr="#BAA5CE", GradientType=1 );
   }
   #pricing-603 .cs-package {
     /* 16px - 20px */
@@ -2305,7 +2300,6 @@ p, li, a, h3, h4, button, span, label {
 #mc_embed_signup {
     clear: left; 
     font: 14px Helvetica,Arial,sans-serif; 
-    width: '';
   }
   input#mc-embedded-subscribe.button {
     background-color: #562C80;
@@ -2320,8 +2314,6 @@ p, li, a, h3, h4, button, span, label {
     max-width: 36.125rem;
 }
 }
-
-
 #scrollToTopBtn{
   position: fixed;
   width: 2.5rem;
@@ -2381,26 +2373,26 @@ iframe {
 #content-container {
   padding: var(--padding-2);
   margin: 0 auto;
-  h3 {
-    text-align: center;
-  }
-  #philosophy {
+}
+#content-container h3 {
+  text-align: center;
+}
+#content-container #philosophy {
     text-align: center;
     max-width: 60rem;
     margin: 0 auto;
     margin-bottom: var(--margin-4);
   }
-  #keynote {
+  #content-container #keynote {
     gap: 4rem;
     max-width: 40rem;
     margin: 0 auto;
   }
-  #keynote.keynote {
+  #content-container #keynote.keynote {
     margin-bottom: var(--margin-4);
   }
-  #keynote .include {
+  #content-container #keynote .include {
     font-weight: 700;
     margin-bottom: .5rem;
     margin-top: .5rem;
   }
-}
