@@ -61,7 +61,7 @@ This project is licensed under a proprietary license. Unauthorized copying, modi
 
 Merica Maziya - mericadev@gmail.com (mailto:mericadev@gmail.com)
 
-Project Link: [https://github.com/mericadev/nsm-corp-website](https://github.com/mericadev/nsm-corp-website)
+Project Link: [[https://github.com/mericadev/nsm-corp-website](https://github.com/mericadev/nsm-corp-website)](https://mericadev.github.io/NSM-CORP/)
 
 Website Link: [https://nsmcorp.org]]
 
