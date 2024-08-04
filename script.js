@@ -145,13 +145,19 @@ window.addEventListener("resize", () => {
 //Video Auto Play
 document.addEventListener("DOMContentLoaded", function() {
       var video = document.getElementById("myVideo");
+      var playButton = document.getElementById("playButton");
 
       // Attempt to play the video
       video.play().catch(function(error) {
         console.log("Autoplay was prevented:", error);
-        // Handle the case where autoplay is prevented
-        // Optionally, display a message to the user or provide a play button
+        // Show the play button if autoplay is blocked
+        playButton.style.display = 'block';
       });
 
-
+      // Add event listener for play button
+      playButton.addEventListener('click', function() {
+        video.play();
+        playButton.style.display = 'none'; // Hide the button once video starts playing
+      });
+    });
                             
