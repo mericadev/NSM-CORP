@@ -143,31 +143,13 @@ window.addEventListener("resize", () => {
 });
 
 //Video Auto Play
- document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
       var video = document.getElementById("myVideo");
-      var playButton = document.getElementById("playButton");
 
-      if (video) {
-        // Attempt to play the video
-        video.play().catch(function(error) {
-          console.log("Autoplay was prevented:", error);
-          // Show the play button if autoplay is blocked
-          if (playButton) {
-            playButton.style.display = 'block';
-          }
-        });
-
-        // Add event listener for play button
-        if (playButton) {
-          playButton.addEventListener('click', function() {
-            video.play().catch(function(error) {
-              console.log("Play button error:", error);
-            });
-            playButton.style.display = 'none'; // Hide the button once video starts playing
-          });
-        }
-      } else {
-        console.log("Video element not found.");
-      }
+      // Attempt to play the video
+      video.play().catch(function(error) {
+        console.log("Autoplay was prevented:", error);
+        // Handle the case where autoplay is prevented
+        // Optionally, display a message to the user or provide a play button
+      });
     });
-                            
