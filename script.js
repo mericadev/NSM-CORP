@@ -142,5 +142,16 @@ window.addEventListener("resize", () => {
   }, 400);
 });
 
+//Video Auto Play
+document.addEventListener("DOMContentLoaded", function() {
+      var video = document.getElementById("myVideo");
+
+      // Attempt to play the video
+      video.play().catch(function(error) {
+        console.log("Autoplay was prevented:", error);
+        // Handle the case where autoplay is prevented
+        // Optionally, display a message to the user or provide a play button
+      });
+
 
                             
