@@ -719,7 +719,7 @@
   font-weight: 700;
   min-width: 10.875rem; /* Minimum width of the button */
   margin: auto;
-  color: var(--black-purp);
+  color: var(--white-purp);
   padding: 0 1.5rem; /* Horizontal padding */
   font-family: sans-serif;
   box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
@@ -752,19 +752,24 @@
 }
 .cs-button-6 .cs-icon path {
     transition: fill 0.3s;
+    fill: var(--white-purp)
 }
 .cs-button-6:hover, .nav-btn:hover {
-    color: var(--white-purp);
+    color: var(--black-purp);
 }
 .cs-button-6:hover:before, .nav-btn:hover:before {
     width: 100%;
 }
 .cs-button-6:hover path {
-    fill: var(--white-purp);
+    fill: var(--black-purp);
 }
-.nav-btn:hover path {
+.nav-btn path {
   fill: var(--white-purp);
 }
+.nav-btn:hover path {
+  fill: var(--black-purp);
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
@@ -785,12 +790,8 @@
 <---          Footer            -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px
-@media only screen and (max-width: 800px) {
-  #cs-footer-1292{
-    margin-top: -4rem;
-  }
-} */
+/* Mobile - 360px */
+
 
 @media only screen and (min-width: 0rem) {
   #cs-footer-1292 {
